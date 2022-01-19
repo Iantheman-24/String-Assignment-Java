@@ -1,0 +1,43 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+  /* String Boolean
+  word1= "Hello";
+  // Hello has 5 characters
+  tempString1 = "He";
+  tempString2 = "ll";
+  tempString3 = "o";
+  // Simple addition of characters
+  finalWord = tempString1 + tempString2 + tempString3;
+  System.out.println(finalWord);*/
+  //String concatination
+  //There are two ways of concatenating string in Java
+
+  //Type 1:By + (String concatenation) operator
+  //Type 2:By concat() method
+
+  //Let's look at the first Type by + (String concatination) operator
+  //Javs String Concatenation Operator (+) is use to add strings. Ex:
+  class testStringConcat1{
+    public static void main (String args []){
+    String s = "Birth" + "day";
+    System.out.println(s);
+    // A piece of Java compiler tansforms the code above to this:
+    String s = (new StringBuilder()).append("Birth").append("day").toString();
+    
+    //String concatination by using concat() method
+    //The String concat () method concatenates the specified string to the end of current string. Here is the syntax:
+    public String concat (String another)
+
+    //Now lets see an examples
+    class testStringConcat2{
+      public static void main (String args []){
+        string s1 = "Birth";
+        string s2 = "day";
+        string s3 = s1 concat (s2);
+        System.out.print.ln(s3);
+      }
+    }
+  }
+}
